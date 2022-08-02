@@ -19,52 +19,7 @@ public class JavaGeo {
 	}
 
 }
-	public abstract class Shape{
-		String color;
-		
-		public void setColor(String color) {
-			this.color = color;
-		}
-		
-		public String getColor() {
-			return color;
-		}
-		
-		public abstract double getArea();
-		
-	}
+
 	
-	public class Circle extends Shape{
-		
-		protected double r;
-		
-		Circle(double radius){
-			
-			r =radius;
-	}
-		
-		
-		@Override
-		public double getArea() {
-			return Math.PI * Math.pow(r, 2);
-		}
-	}
-	
-	public class Square extends Shape {
-		
-		
-		protected double l;
-		
-		Square(double sideLength) {
-		
-			l = sideLength;
-			
-		}
-		
-		@Override
-		public double getArea() {
-			return Math.PI *Math.pow(1, 2);
-		}
-	}
 
 
