@@ -1,0 +1,68 @@
+package javageo;
+
+public class JavaGeo {
+
+	public static void main(String[] args) {
+		Shape[] shapes = new Shape[2];
+		
+		
+		shapes[0] = new Circle(2);
+		shapes[0].setColor(" Blue ");
+		
+		shapes[1] = new Square(2);
+		shapes[1].setColor( "Red ");
+		
+		for (Shape s:shapes) {
+			System.out.println("Cor: " + s.getColor() + "Area: "+ s.getArea());
+		}
+		
+	}
+
+}
+	abstract class Shape{
+		String color;
+		
+		public void setColor(String color) {
+			this.color = color;
+		}
+		
+		public String getColor() {
+			return color;
+		}
+		
+		public abstract double getArea();
+		
+	}
+	
+	class Circle extends Shape{
+		
+		double r;
+		
+		Circle(double radius){
+			
+			r =radius;
+	}
+		
+		
+		@Override
+		public double getArea() {
+			return Math.PI * Math.pow(r, 2);
+		}
+	}
+	
+	class Square extends Shape {
+		
+		
+		
+		Square(double sideLength) {
+		
+			
+		}
+		
+		@Override
+		public double getArea() {
+			return Math.PI * 1.3;
+		}
+	}
+
+

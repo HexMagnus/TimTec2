@@ -1,0 +1,32 @@
+package javageo;
+
+public class JavaGeo {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+	
+	class Shape{
+		String color;
+		
+		void setColor(String Color) {
+			this.color = color;
+		}
+		
+		String getColor() {
+			return color;
+		}
+	}
+	
+	class Circle extends Shape{
+		
+	}
+	
+	class Square extends Shape{
+		
+	}
+}
+

@@ -1,0 +1,39 @@
+package javageo;
+
+public class JavaGeo {
+
+	public static void main(String[] args) {
+		Shape s = new Square();
+		
+		s.setColor("Blue");
+		
+		System.out.println(s.getColor());
+		
+	}
+
+}
+	abstract class Shape{
+		String color;
+		
+		public void setColor(String color) {
+			this.color = color;
+		}
+		
+		public String getColor() {
+			return color;
+		}
+		
+		public abstract double getArea();
+		
+	}
+	
+	class Circle extends Shape{
+		public double getArea();
+			return Math.Po * Math.pov(1, 2):
+	}
+	
+	class Square extends Shape{
+		public double getArea();
+	}
+
+
